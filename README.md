@@ -1,19 +1,19 @@
 # Trabalho de Estrutura de Dados
 
 ## Alunos
-- **Lenardo de Lima Amaral:** [Lenardo de Lima Amaral]
-  - **RA:** [22305363]
-  - **Curso:** [Ciencias de Dados e Machine Learning]
-  - **E-mail:** [leonardo.amaral90@live.com]
+- **Lenardo de Lima Amaral**
+  - **RA:** 22305363
+  - **Curso:** Ciencias de Dados e Machine Learning
+  - **E-mail:** leonardo.amaral90@live.com
 
-- **Thiago Castro Barreto:** [Thiago Castro Barreto]
-  - **RA:** [22301452]
-  - **Curso:** [Ciencias de Dados e Machine Learning]
-  - **E-mail:** [thiago.cb@sempreceub.com]
+- **Thiago Castro Barreto**
+  - **RA:** 22301452
+  - **Curso:** Ciencias de Dados e Machine Learning
+  - **E-mail:** thiago.cb@sempreceub.com
 
 ## Dataset
-O dataset utilizado neste trabalho foi localizado em [https://www.kaggle.com/datasets/shushant/data-science-job-dataset/].
-- **Descrição:** [This dataset is the collection of data science and data analyst-related jobs. It is created by scrapping recent job posts from different job portals like Indeed, Glassdoor, and Linkedin.]
+O dataset utilizado neste trabalho foi localizado em [Kaggle](https://www.kaggle.com/datasets/shushant/data-science-job-dataset/).
+- **Descrição:** Este conjunto de dados é a coleção de empregos relacionados à ciência de dados e analistas de dados. Ele é criado pela eliminação de postagens de emprego recentes de diferentes portais de empregos, como Even, Glassdoor e Linkedin.
 
 ## Estrutura do Projeto
 - **model/:** Contém as classes e estruturas de dados utilizadas.
