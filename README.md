@@ -30,5 +30,5 @@ Para executar o projeto, siga os passos abaixo:
 
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/tcastb/ED_trabalho.git]
+   git clone https://github.com/tcastb/ED_trabalho.git
    cd ED_trabalho
