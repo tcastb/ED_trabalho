@@ -3,39 +3,63 @@ from model.BinaryNode import BinaryNode
 class BinaryTree:
     def __init__(self):
         self.root = None
+        self.node_count = 0
 
     def insert(self, data):
         self.root = self._insert(self.root, data)
 
-    def _insert(self, root, data):
-        if root is None:
+    def _insert(self, node, data):
+        if node is None:
+            self.node_count += 1
             return BinaryNode(data)
+        
+        if data.data.Name == node.data.data.Name:
+            node.instances.append(data)
+        elif data.data.Name < node.data.data.Name:
+            node.left = self._insert(node.left, data)
+        elif data.data.Name > node.data.data.Name:
+            node.right = self._insert(node.right, data)
 
-        if data.Name < root.data.Name:
-            root.left = self._insert(root.left, data)
-        elif data.Name > root.data.Name:
-            root.right = self._insert(root.right, data)
+        return node
 
-        return root
+    def search(self, condition):
+        return self._search(self.root, condition)
 
-    def search(self, value):
-        return self._search(self.root, value)
+    def _search(self, node, condition):
+        if node is None:
+            return None
 
-    def _search(self, root, value):
-        if root is None or root.data.Name == value:
-            return root
+        print(f"Checking node: {node.data.data.Name}")
 
-        if value < root.data.Name:
-            return self._search(root.left, value)
+        comparison_result = condition(node.data.data)
+
+        # if comparison_result == 0:
+        #     print(f"Condition met for node: {node.data.data.Name}")
+        #     return node.instances
+        if comparison_result < 0:
+            print("Going left")
+            return self._search(node.left, condition)
         else:
-            return self._search(root.right, value)
+            print("Going right")
+            return self._search(node.right, condition)
 
-    def inorder_traversal(self, root, result):
-        if root:
-            self.inorder_traversal(root.left, result)
-            result.append(root.data)
-            self.inorder_traversal(root.right, result)
+    def display_tree(self):
+        return self._display_tree(self.root, "")
 
+    def _display_tree(self, node, prefix):
+        result = ""
+
+        if node:
+            result += f"{prefix}{node.data.data.Name}\n"
+            if node.left or node.right:
+                result += f"{prefix}├── Left: {self._display_tree(node.left, prefix + '│   ')}" if node.left else ""
+                result += f"{prefix}└── Right: {self._display_tree(node.right, prefix + '    ')}" if node.right else ""
+
+        return result
+
+    def total(self):
+        print(f'O total de nós inseridos na àrvore de busca é de: {self.node_count}')
+        
     def display(self):
         result = []
         self.inorder_traversal(self.root, result)
