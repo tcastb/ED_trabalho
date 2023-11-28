@@ -1,4 +1,4 @@
-# Trabalho de Estrutura de Dados
+<h1 align="center">Trabalho de Estrutura de Dados</h1>
 
 ## Alunos
 - **Lenardo de Lima Amaral**
