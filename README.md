@@ -28,7 +28,7 @@ O dataset utilizado neste trabalho foi localizado em [Kaggle](https://www.kaggle
 ## Execução do Projeto
 
 ### Pré-requisitos
-Antes de começar, você vai precisar ter instalado em sua máquina as seguinte ferramenta:
+Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta:
 [Git](https://git-scm.com).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
