@@ -40,26 +40,15 @@ Para executar o projeto, siga os passos abaixo:
    cd ED_trabalho
    ```
 
-### 1.Instalação / Importação das bibliotecas
-Utilizando sistema de gerenciador de pacotes.
+## 1.Instalação / Importação das bibliotecas
 
-Todos os pacotes utilizados na aplicação, é listado no arquivo 'requirements.txt'.
+## 2.Preparação de Dados
 
-É obrigatório a execução deste bloco de código antes de executar os demais blocos de códigos.
+## 3.Análise Utilizando Listas
 
-*%pip install -r requirements.txt*
-import pandas as pd
-import matplotlib
-import matplotlib.pyplot as plt
-import seaborn
-import numpy as np
-import folium
-from folium.plugins import MarkerCluster
+## 4.Análise Utilizando Árvores de Busca
 
-### 2.Preparação de Dados
-- Atribuindo a variável 'principal' o arquivo .csv para tratabilidade
-df = pd.read_csv(r'data\data.csv', sep=',', encoding='utf-8')
-df.head()
-- Renomeando as colunas para uma melhor visualização
-df.columns = ['ID', 'Name', 'Company', 'Location', 'Description', 'Salary']
-df.head()
+## 5.Análise Utilizando Grafos
+
+## 6.Visualização de Dados
+
