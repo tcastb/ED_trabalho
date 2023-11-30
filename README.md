@@ -91,10 +91,11 @@ Função para tratar uma string dividida por vírgulas.
     else:                  # Se houver mais de três partes, retorna a string original
         return arg
 
-# Converte as colunas 'Name' e 'Company' para o formato de título
-df['Name'] = df['Name'].str.title()
-df['Company'] = df['Company'].str.title()
-df['Location'] = df['Location'].apply(tratar_string)  # Aplica a função tratar_string à coluna 'Location' do DataFrame
+Converte as colunas 'Name' e 'Company' para o formato de título
+
+ df['Name'] = df['Name'].str.title()
+ df['Company'] = df['Company'].str.title()
+ df['Location'] = df['Location'].apply(tratar_string)  # Aplica a função tratar_string à coluna 'Location' do DataFrame
 ## Análise Utilizando Listas
 
 ## Análise Utilizando Árvores de Busca
