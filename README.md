@@ -59,8 +59,41 @@ Todos os pacotes utilizados na aplicação, é listado no arquivo 'requirements.
 - import numpy as np
 - import folium
 - from folium.plugins import MarkerCluster
-## Preparação de Dados
 
+## Preparação de Dados
+Atribuindo a variável 'principal' o arquivo .csv para tratabilidade.
+ - df = pd.read_csv(r'data\data.csv', sep=',', encoding='utf-8')
+
+Renomeando as colunas para uma melhor visualização.
+ - df.columns = ['ID', 'Name', 'Company', 'Location', 'Description', 'Salary']
+
+Verificado que a coluna em questão está para contagem de linhas, a mesma foi retirada do dataframe.
+ - df.drop(['ID'], axis=1, inplace=True)
+
+Fazendo a contagem de quantos NaN conta dentro da coluna 'Salary' para tratamento dentro da coluna.
+ - df['Salary'].isna().sum()
+
+Atribuindo 0 aos valores ausentes na coluna 'Salary'.
+ - df['Salary'] = df['Salary'].fillna(0, inplace=False)
+
+Função para tratar uma string dividida por vírgulas.
+def tratar_string(arg):
+    
+    partes = arg.split(',')
+    
+    if len(partes) == 1:   # Se houver apenas uma parte, converte para título (primeira letra de cada palavra maiúscula)
+        return partes[0].title()
+    elif len(partes) == 2: # Se houver duas partes, converte a primeira para título e a segunda para maiúsculas (removendo espaços em branco desnecessários)
+        return f"{partes[0].title()}, {partes[1].strip().upper()}"
+    elif len(partes) == 3: # Se houver três partes, converte a primeira para título, a segunda e a terceira para maiúsculas (removendo espaços em branco desnecessários)
+        return f"{partes[0].title()}, {partes[1].strip().upper()}, {partes[2].strip().upper()}"
+    else:                  # Se houver mais de três partes, retorna a string original
+        return arg
+
+# Converte as colunas 'Name' e 'Company' para o formato de título
+df['Name'] = df['Name'].str.title()
+df['Company'] = df['Company'].str.title()
+df['Location'] = df['Location'].apply(tratar_string)  # Aplica a função tratar_string à coluna 'Location' do DataFrame
 ## Análise Utilizando Listas
 
 ## Análise Utilizando Árvores de Busca
