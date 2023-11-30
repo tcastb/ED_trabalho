@@ -77,7 +77,8 @@ Atribuindo 0 aos valores ausentes na coluna 'Salary'.
  - df['Salary'] = df['Salary'].fillna(0, inplace=False)
 
 Função para tratar uma string dividida por vírgulas.
-def tratar_string(arg):
+
+  def tratar_string(arg):
     
     partes = arg.split(',')
     
