@@ -37,13 +37,14 @@ Para executar o projeto, siga os passos abaixo:
 1. Clone este repositório:
    ```bash
    git clone https://github.com/tcastb/ED_trabalho.git
-   cd ED_trabalho ´´´
+   cd ED_trabalho
+   ```
 
 ### 1.Instalação / Importação das bibliotecas
 - Utilizando sistema de gerenciador de pacotes.
 - Todos os pacotes utilizados na aplicação, é listado no arquivo 'requirements.txt'.
 - É obrigatório a execução deste bloco de código antes de executar os demais blocos de códigos.
-*%pip install -r requirements.txt*
+$ *%pip install -r requirements.txt*
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
