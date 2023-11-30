@@ -40,15 +40,15 @@ Para executar o projeto, siga os passos abaixo:
    cd ED_trabalho
    ```
 
-## 1.Instalação / Importação das bibliotecas
+## Instalação / Importação das bibliotecas
 
-## 2.Preparação de Dados
+## Preparação de Dados
 
-## 3.Análise Utilizando Listas
+## Análise Utilizando Listas
 
-## 4.Análise Utilizando Árvores de Busca
+## Análise Utilizando Árvores de Busca
 
-## 5.Análise Utilizando Grafos
+## Análise Utilizando Grafos
 
-## 6.Visualização de Dados
+## Visualização de Dados
 
