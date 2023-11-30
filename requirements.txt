@@ -3,3 +3,4 @@ matplotlib==3.8.1 # https://matplotlib.org/
 seaborn==0.13.0 # https://seaborn.pydata.org/
 numpy==1.26.2 # https://numpy.org/doc/
 nbimporter==0.3.4 # https://github.com/grst/nbimporter
+folium==0.15.0 # https://pypi.org/project/folium/
