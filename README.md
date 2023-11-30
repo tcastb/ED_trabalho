@@ -1,4 +1,4 @@
-# Trabalho de Estrutura de Dados
+<h1 align="center">Trabalho de Estrutura de Dados</h1>
 
 ## Alunos
 - **Lenardo de Lima Amaral**
@@ -26,9 +26,15 @@ O dataset utilizado neste trabalho foi localizado em [Kaggle](https://www.kaggle
 - **main.ipynb:** Jupyter Notebook principal do projeto, contendo a implementação e análise.
 
 ## Execução do Projeto
+
+### Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta:
+[Git](https://git-scm.com). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
 Para executar o projeto, siga os passos abaixo:
 
 1. Clone este repositório:
    ```bash
    git clone https://github.com/tcastb/ED_trabalho.git
    cd ED_trabalho
+   ```
