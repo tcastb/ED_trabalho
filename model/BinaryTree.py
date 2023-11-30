@@ -23,9 +23,12 @@ class BinaryTree:
         return node
 
     def search(self, condition):
-        return self._search(self.root, condition)
+        list = []
+        self._search(self.root, condition, list)
+        
+        return list
 
-    def _search(self, node, condition):
+    def _search(self, node, condition, list):
         if node is None:
             return None
 
@@ -33,15 +36,15 @@ class BinaryTree:
 
         comparison_result = condition(node.data.data)
 
-        # if comparison_result == 0:
-        #     print(f"Condition met for node: {node.data.data.Name}")
-        #     return node.instances
+        if comparison_result == 0:
+            print(f"Condition met for node: {node.data.data.Name}")
+            list.append(node.instances)
         if comparison_result < 0:
             print("Going left")
-            return self._search(node.left, condition)
+            return self._search(node.left, condition, list)
         else:
             print("Going right")
-            return self._search(node.right, condition)
+            return self._search(node.right, condition, list)
 
     def display_tree(self):
         return self._display_tree(self.root, "")
