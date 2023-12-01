@@ -4,3 +4,4 @@ seaborn==0.13.0 # https://seaborn.pydata.org/
 numpy==1.26.2 # https://numpy.org/doc/
 nbimporter==0.3.4 # https://github.com/grst/nbimporter
 folium==0.15.0 # https://pypi.org/project/folium/
+networkx==3.2.1 # https://networkx.org/
