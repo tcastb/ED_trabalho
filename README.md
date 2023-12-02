@@ -17,13 +17,15 @@ O dataset utilizado neste trabalho foi localizado em [Kaggle](https://www.kaggle
 
 ## Estrutura do Projeto
 - **model/:** Contém as classes e estruturas de dados utilizadas.
-  - **Science.py:** Definição da classe `Science`.
-  - **Node.py:** Definição da classe `Node`.
   - **BinaryNode.py:** Definição da classe `BinaryNode`.
   - **BinaryTree.py:** Definição da classe `BinaryTree`.
   - **ListaEncadeada.py:** Definição da classe `ListaEncadeada`.
+  - **Node.py:** Definição da classe `Node`.
+  - **Science.py:** Definição da classe `Science`.
 
 - **main.ipynb:** Jupyter Notebook principal do projeto, contendo a implementação e análise.
+- **README.md:** Arquivo markdown para fornecer informações essenciais sobre o projeto, como propósito e instruções de instalação.
+- **requirements.txt:** Arquivo de texto usado para listar e especificar as dependências do projeto.
 
 ## Execução do Projeto
 
