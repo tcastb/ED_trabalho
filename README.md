@@ -1,7 +1,7 @@
 <h1 align="center">Trabalho de Estrutura de Dados</h1>
 
 ## Alunos
-- **Lenardo de Lima Amaral**
+- **Leonardo de Lima Amaral**
   - **RA:** 22305363
   - **Curso:** Ciencias de Dados e Machine Learning
   - **E-mail:** leonardo.amaral90@live.com
