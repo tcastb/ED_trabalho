@@ -23,28 +23,20 @@ class BinaryTree:
         return node
 
     def search(self, condition):
-        list = []
-        self._search(self.root, condition, list)
-        
-        return list
+        result = []
+        self._search(self.root, condition, result)
+        return result
 
-    def _search(self, node, condition, list):
+    def _search(self, node, condition, result):
         if node is None:
             return None
 
-        print(f"Checking node: {node.data.data.Name}")
+        if condition(node.data.data):
+            result.extend(node.instances)
 
-        comparison_result = condition(node.data.data)
+        self._search(node.left, condition, result)
 
-        if comparison_result == 0:
-            print(f"Condition met for node: {node.data.data.Name}")
-            list.append(node.instances)
-        if comparison_result < 0:
-            print("Going left")
-            return self._search(node.left, condition, list)
-        else:
-            print("Going right")
-            return self._search(node.right, condition, list)
+        self._search(node.right, condition, result)
 
     def display_tree(self):
         return self._display_tree(self.root, "")
@@ -60,8 +52,22 @@ class BinaryTree:
 
         return result
 
-    def total(self):
+    def node_total(self):
         print(f'O total de nós inseridos na àrvore de busca é de: {self.node_count}')
+        
+    def register_total(self):
+        total_count = self._register_total(self.root)
+        print(f'O total de registros inseridos na árvore de busca é de: {total_count}')
+
+    def _register_total(self, node):
+        if node:
+            # Contar o próprio nó e todos os nós nas listas 'instances'
+            count = 1 + len(node.instances)
+            # Recursivamente contar os nós à esquerda e à direita
+            count += self._register_total(node.left) + self._register_total(node.right)
+            return count
+        else:
+            return 0
         
     def display(self):
         result = []
